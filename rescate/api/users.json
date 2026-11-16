@@ -1,0 +1,72 @@
+[
+ {
+  "id": 2,
+  "name": "admin",
+  "url": "https://irongravel.com",
+  "description": "",
+  "link": "https://irongravel.com/author/alain/",
+  "slug": "alain",
+  "avatar_urls": {
+   "24": "https://secure.gravatar.com/avatar/1a36e1ad50a58fee475509b5025c10b027d506a9033b1dd8fe120083636b9f2c?s=24&d=mm&r=g",
+   "48": "https://secure.gravatar.com/avatar/1a36e1ad50a58fee475509b5025c10b027d506a9033b1dd8fe120083636b9f2c?s=48&d=mm&r=g",
+   "96": "https://secure.gravatar.com/avatar/1a36e1ad50a58fee475509b5025c10b027d506a9033b1dd8fe120083636b9f2c?s=96&d=mm&r=g",
+   "128": "https://secure.gravatar.com/avatar/1a36e1ad50a58fee475509b5025c10b027d506a9033b1dd8fe120083636b9f2c?s=128&d=mm&r=g"
+  },
+  "meta": [],
+  "acf": [],
+  "yoast_head": null,
+  "yoast_head_json": null,
+  "_links": {
+   "self": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/users/2",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/users"
+    }
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "name": "Miguel Angel García",
+  "url": "",
+  "description": "",
+  "link": "https://irongravel.com/author/miguel-angel-garcia/",
+  "slug": "miguel-angel-garcia",
+  "avatar_urls": {
+   "24": "https://secure.gravatar.com/avatar/812eb37dc48e7db1f84e0114f1ae32111af37347b03c45c041f112878774f2ab?s=24&d=mm&r=g",
+   "48": "https://secure.gravatar.com/avatar/812eb37dc48e7db1f84e0114f1ae32111af37347b03c45c041f112878774f2ab?s=48&d=mm&r=g",
+   "96": "https://secure.gravatar.com/avatar/812eb37dc48e7db1f84e0114f1ae32111af37347b03c45c041f112878774f2ab?s=96&d=mm&r=g",
+   "128": "https://secure.gravatar.com/avatar/812eb37dc48e7db1f84e0114f1ae32111af37347b03c45c041f112878774f2ab?s=128&d=mm&r=g"
+  },
+  "meta": [],
+  "acf": [],
+  "yoast_head": null,
+  "yoast_head_json": null,
+  "_links": {
+   "self": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/users/4",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/users"
+    }
+   ]
+  }
+ }
+]

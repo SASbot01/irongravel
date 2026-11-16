@@ -1,0 +1,10 @@
+# Túnel de Cloudflare «irongravel» (creado en el minipc con `cloudflared tunnel create irongravel`).
+# Las credenciales NO están en el repo: /home/s4sf/.cloudflared/<uuid>.json en el minipc.
+tunnel: 4825a63f-fd33-4043-b2fe-a092799ff9de
+credentials-file: /etc/cloudflared/creds.json
+ingress:
+  - hostname: irongravel.com
+    service: http://irongravel:80
+  - hostname: www.irongravel.com
+    service: http://irongravel:80
+  - service: http_status:404

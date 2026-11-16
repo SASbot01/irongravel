@@ -1,0 +1,65 @@
+[
+ {
+  "id": 7916,
+  "date": "2025-09-20T16:36:54",
+  "date_gmt": "2025-09-20T14:36:54",
+  "guid": {
+   "rendered": "https://irongravel.com/menu-iron-gravel/"
+  },
+  "modified": "2025-09-20T16:36:54",
+  "modified_gmt": "2025-09-20T14:36:54",
+  "slug": "menu-iron-gravel",
+  "status": "publish",
+  "type": "wp_navigation",
+  "link": "https://irongravel.com/menu-iron-gravel/",
+  "title": {
+   "rendered": "Menú Iron Gravel"
+  },
+  "content": {
+   "rendered": "<li class=\"wp-block-navigation-item has-child menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-submenu\"><a class=\"wp-block-navigation-item__content\" href=\"https://irongravel.com/festival-cabo-de-palos/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Festival Cabo de Palos u003cdivu003e11 Octubre 2025u003c/divu003e</span></a><ul class=\"wp-block-navigation__submenu-container menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-submenu\"><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/festival-cabo-de-palos/#programa\" title=\"\"><span class=\"wp-block-navigation-item__label\">Programa</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/festival-cabo-de-palos/#localizacion\" title=\"\"><span class=\"wp-block-navigation-item__label\">Puntos de interés</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/festival-cabo-de-palos/#reglamento\" title=\"\"><span class=\"wp-block-navigation-item__label\">Reglamento</span></a></li><li class=\"wp-block-navigation-item yellow_menu menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://www.rockthesport.com/es/evento/-festival-gravel-cabo-de-palos/\" target=\"_blank\"   title=\"\"><span class=\"wp-block-navigation-item__label\">Inscripción Cabo de Palos 2025</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/festival-cabo-de-palos/#recorridos\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancias</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/festival-cabo-de-palos/50k/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancia 50K</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/festival-cabo-de-palos/80k/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancia 80K</span></a></li></ul></li><li class=\"wp-block-navigation-item has-child menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-submenu\"><a class=\"wp-block-navigation-item__content\" href=\"https://irongravel.com/ig360/\" title=\"\"><span class=\"wp-block-navigation-item__label\">IG360 ALICANTE u003cdivu003e3-6 abril 2025u003c/divu003e</span></a><ul class=\"wp-block-navigation__submenu-container menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-submenu\"><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/ig360/#programa\" title=\"\"><span class=\"wp-block-navigation-item__label\">Programa</span></a></li><li class=\"wp-block-navigation-item hide menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/ig360/#localizacion\" title=\"\"><span class=\"wp-block-navigation-item__label\">Puntos de interés</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/ig360/#reglamento\" title=\"\"><span class=\"wp-block-navigation-item__label\">Reglamento</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"/ig360/#recorridos\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancias</span></a></li><li class=\"wp-block-navigation-item yellow_menu menu-item menu-item-type-custom menu-item-object-custom wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://www.rockthesport.com/es/evento/ig360-alicante-2025\" target=\"_blank\"   title=\"\"><span class=\"wp-block-navigation-item__label\">Inscripción IG360 2025</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/ig360/100k/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancia 100K</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/ig360/226k/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancia 200K</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/ig360/360k/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancia 360K</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/ig360/720k/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Distancia 720K u003cspan class=u0022newu0022u003eNuevou003c/spanu003e</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/preguntas-frecuentes/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Preguntas frecuentes</span></a></li></ul></li><li class=\"wp-block-navigation-item yellow_menu_level1 menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/shop/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Shop u003cdivu003eNUEVOu003c/divu003e</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/patrocinadores/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Patrocinadores</span></a></li><li class=\"wp-block-navigation-item menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/media/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Media</span></a></li><li class=\"wp-block-navigation-item movil-si1024 menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/noticias/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Noticias</span></a></li><li class=\"wp-block-navigation-item movil-si1024 menu-item menu-item-type-post_type menu-item-object-page wp-block-navigation-link\"><a class=\"wp-block-navigation-item__content\"  href=\"https://irongravel.com/contacto/\" title=\"\"><span class=\"wp-block-navigation-item__label\">Contacto</span></a></li>",
+   "protected": false
+  },
+  "template": "",
+  "acf": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/navigation/7916",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/navigation"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/types/wp_navigation"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 0,
+     "href": "https://irongravel.com/wp-json/wp/v2/navigation/7916/revisions"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://irongravel.com/wp-json/wp/v2/media?parent=7916"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

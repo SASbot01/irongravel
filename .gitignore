@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Secretos: nunca al repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+deploy/*.json
+
+# Vercel
+.vercel

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/wp-content/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+    },
+    {
+      "source": "/(.*)\\.gpx",
+      "headers": [{ "key": "Content-Disposition", "value": "attachment" }]
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "(.*)\\.vercel\\.app" }],
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
+  ]
+}
