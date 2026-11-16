@@ -11,8 +11,7 @@ en «modo mantenimiento» el 05-03-2026; esta copia recupera la web tal y como s
 | `public/` | **La web lista para servir** (HTML estático + `wp-content/` con todas las fotos, PDF, GPX, vídeos, fuentes, CSS y JS). |
 | `build.py` | Genera `public/**/index.html` a partir de las fuentes de `rescate/`. |
 | `check.py` | Comprueba que todo enlace y fichero interno existe. |
-| `vercel.json` | Publicación en Vercel: sirve `public/` tal cual, sin build. |
-| `deploy/` | Copia en el minipc (Docker + nginx + túnel de Cloudflare), plan B de la de Vercel. |
+| `deploy/` | Publicación en el minipc (Docker + nginx + túnel de Cloudflare). |
 | `rescate/cc/` | HTML original de cada página (Common Crawl, capturas de 2025-08 a 2026-02). |
 | `rescate/api/` | Volcado de la API REST de WordPress: 50 páginas, 11 noticias, 12 productos, índice de la mediateca (3.888 entradas). |
 | `rescate/live/` | Página de mantenimiento tal y como estaba el día del rescate. |
@@ -28,17 +27,22 @@ python3 -m http.server 8765 --directory public
 
 - **Repo:** `SASbot01/irongravel` (rama `main`). Lleva la web entera, fotos incluidas (~1,2 GB; el
   fichero más grande, el aftermovie de 2022, pesa 58 MB, por debajo del límite de 100 MB de GitHub).
-- **Vercel:** proyecto conectado al repo; cada push a `main` publica. Sin build: `vercel.json` le dice
-  que sirva `public/` y que las URL acaben en `/` como en WordPress (`/contacto` → `/contacto/`).
-  Las fotos, el CSS y el JS de `wp-content/` llevan 30 días de caché. En `*.vercel.app` se manda
-  `X-Robots-Tag: noindex` para que Google solo indexe el dominio.
-- **Dominio:** canónica `https://irongravel.com/`; `www` redirige al dominio sin www. El DNS está en
-  Cloudflare con los registros de la web en «DNS only» (nube gris) apuntando a Vercel. El correo
-  (Google Workspace, Mailgun en `m.`) sigue en la misma zona y no se toca.
-- **Plan B (minipc):** `deploy/` levanta nginx con `public/` y el túnel de Cloudflare `irongravel`
-  (`4825a63f-fd33-4043-b2fe-a092799ff9de`), que ya acepta `irongravel.com` y `www`. Para servir desde
-  ahí basta con apuntar `@` y `www` a `4825a63f-fd33-4043-b2fe-a092799ff9de.cfargotunnel.com` (CNAME
-  con proxy). La credencial del túnel vive fuera del repo, en el minipc.
+- **Dónde se sirve:** en el minipc, con `deploy/`. nginx sirve `public/` (solo en local,
+  `127.0.0.1:8830`) y el túnel de Cloudflare `irongravel` (`4825a63f-fd33-4043-b2fe-a092799ff9de`) lo
+  publica en `irongravel.com` y `www`. La credencial del túnel vive fuera del repo, en
+  `/home/s4sf/.cloudflared/<uuid>.json`. No va en Vercel: el equipo es Hobby, ya se pasa del
+  almacenamiento gratis y la web pesa 1,2 GB; detrás de Cloudflare las fotos salen de su caché.
+- **Dominio:** canónica `https://irongravel.com/`. nginx manda `www` al dominio sin www (301) y las URL
+  sin barra final a su versión con barra (`/contacto` → `/contacto/`), como hacía WordPress. En
+  Cloudflare, `@` y `www` son CNAME con proxy a `4825a63f-fd33-4043-b2fe-a092799ff9de.cfargotunnel.com`;
+  el certificado lo pone Cloudflare y «Always Use HTTPS» pasa `http` a `https`. El correo (Google
+  Workspace, y Mailgun en `m.`) sigue en la misma zona.
+- **Actualizar:** en el minipc, `cd ~/sites/irongravel && git pull`. nginx lee `public/` directamente,
+  así que no hay que reiniciar nada; si cambia `deploy/nginx.conf`,
+  `docker exec irongravel-web nginx -s reload`. Levantarlo desde cero: `cd deploy && docker compose up -d`.
+- El servicio `preview` de `deploy/docker-compose.yml` da una URL temporal `*.trycloudflare.com` (con
+  `noindex`) para enseñarla mientras el dominio no apunta al túnel; se puede quitar cuando
+  `irongravel.com` ya responda.
 
 ## De dónde sale cada página
 
