@@ -37,6 +37,11 @@ python3 -m http.server 8765 --directory public
   Cloudflare, `@` y `www` son CNAME con proxy a `4825a63f-fd33-4043-b2fe-a092799ff9de.cfargotunnel.com`;
   el certificado lo pone Cloudflare y «Always Use HTTPS» pasa `http` a `https`. El correo (Google
   Workspace, y Mailgun en `m.`) sigue en la misma zona.
+- **Pantalla de mantenimiento (activa desde el 16-11-2026):** con `set $mantenimiento 1;` en
+  `deploy/nginx.conf`, todas las páginas responden 503 con `public/mantenimiento.html` («Web en
+  mantenimiento · Estamos realizando cambios.», el mismo texto que tenía el WordPress), con
+  `Retry-After` para que Google no las dé por perdidas. Las fotos y ficheros de `wp-content/` y
+  `robots.txt` siguen saliendo. Para abrir la web: poner `0` y `docker exec irongravel-web nginx -s reload`.
 - **Actualizar:** en el minipc, `cd ~/sites/irongravel && git pull`. nginx lee `public/` directamente,
   así que no hay que reiniciar nada; si cambia `deploy/nginx.conf`,
   `docker exec irongravel-web nginx -s reload`. Levantarlo desde cero: `cd deploy && docker compose up -d`.
